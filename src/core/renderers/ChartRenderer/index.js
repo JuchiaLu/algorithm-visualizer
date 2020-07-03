@@ -10,7 +10,8 @@ class ChartRenderer extends Array1DRenderer {
     const chartData = {
       labels: row.map(col => `${col.value}`),
       datasets: [{
-        backgroundColor: row.map(col => col.patched ? styles.colorPatched : col.selected ? styles.colorSelected : styles.colorFont),
+        backgroundColor: row.map(col => col.patched ? styles.colorPatched : col.selected ? styles.colorSelected : col.color ? col.color : styles.colorFont),
+        // backgroundColor: row.map(col => col.patched ? styles.colorPatched : col.selected ? styles.colorSelected : styles.colorFont),
         data: row.map(col => col.value),
       }],
     };

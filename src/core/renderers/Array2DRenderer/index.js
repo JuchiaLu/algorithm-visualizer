@@ -45,8 +45,8 @@ class Array2DRenderer extends Renderer {
               }
               {
                 row.map((col, j) => (
-                  <td className={classes(styles.col, col.selected && styles.selected, col.patched && styles.patched)}
-                      key={j}>
+                  // <td className={classes(styles.col, col.selected && styles.selected, col.patched && styles.patched)} key={j}>
+                  <td style={{backgroundColor: (col.patched || col.selected) ? undefined : col.color}} className={classes(styles.col, col.selected && styles.selected, col.patched && styles.patched)} key={j}>
                     <span className={styles.value}>{this.toString(col.value)}</span>
                   </td>
                 ))

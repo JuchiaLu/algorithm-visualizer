@@ -83,7 +83,8 @@ const TracerApi = {
   }]),
   json: ({ code }) => new Promise(resolve => resolve(JSON.parse(code))),
   js: ({ code }, params, cancelToken) => new Promise((resolve, reject) => {
-    const worker = new Worker('/api/tracers/js/worker');
+    //const worker = new Worker('/api/tracers/js/worker');
+    const worker = new Worker('/worker.js');
     if (cancelToken) {
       cancelToken.promise.then(cancel => {
         worker.terminate();

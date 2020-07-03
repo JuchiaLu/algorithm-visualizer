@@ -41,6 +41,18 @@ class Array1DTracer extends Array2DTracer {
   syncChartTracer() {
     if (this.chartTracer) this.chartTracer.data = this.data;
   }
+
+
+
+  //-------------------------------------------------------------
+
+  setColor(color, sx, ex = sx) {
+    super.setColor(color, 0, sx, 0, ex);
+  }
+
+  removeColor(sx, ex = sx) {
+    super.removeColor(0, sx, 0, ex);
+  }
 }
 
 export default Array1DTracer;
