@@ -33,7 +33,7 @@ API 与 官方的 select 风格保存一致, 如二维数组中(一维数组和�
 | **removeColColor** | remove color from (`sx`, `y`) to (`ex`, `y`).   | removeColColor(int y, int sx, int ex)                  |
 |                    |                                                 |                                                        |
 
-注：这里颜色是绑定到元素而非绑定到位置，如果元素移动后，颜色也会跟着元素移动, color 的值按CSS写即可 
+注：这里颜色是绑定到位置而非绑定到元素，如果元素移动后，颜色会保留在原位置, color 的值按 css 写即可 
 
 ### (二) 删除 JAVA 和 CPP 支持
 
