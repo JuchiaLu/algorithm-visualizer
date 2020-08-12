@@ -4,13 +4,13 @@
 
 官方只支持 patch 元素时的酒红色 和 select 元素时的蓝色，如下图所示的希尔排序：
 
-![](https://raw.githubusercontent.com/JuchiaLu/algorithm-visualizer/master/branding/shellSort1.gif)
+![](http://47.107.243.187:9530/algorithm-visualizer/branding/shellSort1.gif)
 
 有些算法需要将元素分组后进行相应操作， 所有元素同一种颜色，不能不直观的分辨出哪些元素是同一组。
 
 添加自定义颜色功能后希尔排序如下图(绿色和黄色为同一组元素，绿色代表已经排好序，黄色代表等待排序)：
 
-![](https://raw.githubusercontent.com/JuchiaLu/algorithm-visualizer/master/branding/shellSort2.gif)
+![](http://47.107.243.187:9530/algorithm-visualizer/branding/shellSort2.gif)
 
 API 与 官方的 select 风格保存一致, 如二维数组中(一维数组和柱状图类似):
 
